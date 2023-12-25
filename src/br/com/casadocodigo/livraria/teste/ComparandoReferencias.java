@@ -1,3 +1,7 @@
+package br.com.casadocodigo.livraria.teste;
+
+import br.com.casadocodigo.livraria.Autor;
+
 public class ComparandoReferencias {
     public static void main(String[] args){
 

@@ -1,3 +1,9 @@
+package br.com.casadocodigo.livraria.produtos;
+
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.Livro;
+import br.com.casadocodigo.livraria.produtos.Promocional;
+
 public class Ebook extends Livro implements Promocional {
 
     private String waterMark;
