@@ -7,7 +7,6 @@ import br.com.casadocodigo.livraria.produtos.LivroFisico;
 public class CadastroDeLivros {
     public static void main (String[] arg){
 
-
         Autor autor = new Autor();
         autor.setNome("Rodrigo Turini");
         autor.setEmail("rodrigo.turini@caelum.com.br");
