@@ -1,7 +1,8 @@
 package br.com.casadocodigo.livraria.produtos;
 
-import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.produtos.Produto;
+import br.com.casadocodigo.livraria.Autor;
+
 
 public abstract class Livro implements Produto {
 
@@ -65,7 +66,7 @@ public abstract class Livro implements Produto {
     }
 
 
-    void mostrarDetalhes(){
+    public void mostrarDetalhes(){
         System.out.println("==============================================================");
         System.out.println("Mostrando detalhes do livro ");
         System.out.println("Nome: "+nome);

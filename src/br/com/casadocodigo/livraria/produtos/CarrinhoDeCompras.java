@@ -7,26 +7,24 @@ import br.com.casadocodigo.livraria.produtos.Revista;
 public class CarrinhoDeCompras {
 
     private double total;
+    private Produto[] produtos = new Produto[10];
 
-    public void adiciona (Livro livro){
-        System.out.println("Adicionado: "+ livro);
-        livro.aplicaDescontoDe(0.16);
-        total += livro.getValor();
+    public Produto[] getProdutos;
+
+    public void setProdutos(Produto[] produtos) {
+        this.produtos = produtos;
     }
 
-    public void adiciona (Revista revista){
-        System.out.println("Adicionando: "+ revista);
-        revista.aplicaDescontoDe(0.05);
-        total += revista.getValor();
-    }
+    private int contador = 0;
 
-    public void adiciona (Produto produto){
+    public void adiciona(Produto produto){
         System.out.println("Adicionando: "+ produto);
-        total += produto.getValor();
+        this.produtos[contador] = produto;
+        contador++;
+        this.total += produto.getValor();
     }
 
     public double getTotal(){
         return total;
     }
-
 }
